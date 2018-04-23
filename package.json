@@ -1,0 +1,36 @@
+{
+  "name": "@statengine/fixtures",
+  "version": "0.0.1",
+  "description": "Loads fixtures into elastic search.",
+  "main": "lib",
+  "private": "true",
+  "scripts": {
+    "lint": "node_modules/eslint/bin/eslint.js src/** test/**",
+    "test": "mocha --require babel-register ./test/*.js",
+    "compile": "babel --presets env -d lib/ src/ --copy-files",
+    "prepare": "npm run compile"
+  },
+  "author": "Prominent Edge",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.24.1",
+    "babel-tap": "^5.0.0",
+    "chai": "^4.1.0",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-chai-friendly": "^0.4.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "elasticsearch": "^14.0.0",
+    "json-templates": "^1.8.0",
+    "lodash": "^4.17.4"
+  }
+}

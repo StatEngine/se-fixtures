@@ -1,0 +1,9 @@
+{
+  "_id": "{{ FireDepartment.es_indices.fire-incident }}",
+  "_type": "index-pattern",
+  "_source": {
+    "title": "{{ FireDepartment.es_indices.fire-incident }}",
+    "timeFieldName": "description.event_opened",
+    "notExpandable": true
+  }
+}

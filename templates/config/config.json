@@ -1,0 +1,11 @@
+{
+  "_type": "config",
+  "_id": "5.5.3-SNAPSHOT",
+  "_source": {
+    "buildNum": 15497,
+    "dateFormat:tz": "{{ FireDepartment.timezone }}",
+    "timelion:es.timefield": "description.event_opened",
+    "state:storeInSessionStorage": true,
+    "defaultIndex": "{{ FireDepartment.es_indices.fire-incident }}"
+  }
+}
