@@ -6,7 +6,7 @@ import parse from 'json-templates';
 import { updateDoc } from './elasticsearch';
 
 export function loadTemplates(params, cb) {
-  const templatePath = path.join(__dirname, `../../templates/${params.type}`);
+  const templatePath = path.join(__dirname, `../templates/${params.type}`);
   async.waterfall([
     // Read dir
     done => fs.readdir(templatePath, done),
@@ -43,14 +43,13 @@ export function loadTemplates(params, cb) {
     },
     // Update docs into ES
     (docs, done) => {
-      console.dir(docs)
       async.each(docs, (doc, callback) => updateDoc({
         index: params.index,
         type: doc._type,
         id: doc._id,
         body: {
-          doc:  doc._source,
-          doc_as_upsert: true
+          doc: doc._source,
+          doc_as_upsert: true,
         },
       }, callback), (err) => {
         done(err);

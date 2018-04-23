@@ -1,0 +1,17 @@
+{
+  "_id": "f915aac0-472c-11e8-9a80-3de4e4864988",
+  "_type": "dashboard",
+  "_source": {
+    "title": "Sample Dashboard",
+    "hits": 0,
+    "description": "",
+    "panelsJSON": "[{\"size_x\":6,\"size_y\":3,\"panelIndex\":1,\"type\":\"visualization\",\"id\":\"fixture-timelion-24-hour-moving-average-response-times\",\"col\":1,\"row\":1},{\"size_x\":6,\"size_y\":3,\"panelIndex\":2,\"type\":\"visualization\",\"id\":\"fixture-historgram-90th-percentile-distance-to-emergency-by-first-due\",\"col\":7,\"row\":1},{\"size_x\":6,\"size_y\":3,\"panelIndex\":3,\"type\":\"visualization\",\"id\":\"fixture-metric-90th-percentile-turnout-duration\",\"col\":1,\"row\":4},{\"size_x\":6,\"size_y\":3,\"panelIndex\":4,\"type\":\"visualization\",\"id\":\"fixture-pie-address-battalion\",\"col\":7,\"row\":4},{\"size_x\":6,\"size_y\":3,\"panelIndex\":5,\"type\":\"visualization\",\"id\":\"fixture-historam-call-volume-by-unit-and-call-type\",\"col\":1,\"row\":7},{\"size_x\":6,\"size_y\":3,\"panelIndex\":6,\"type\":\"visualization\",\"id\":\"fixture-histogram-calls-by-first-due\",\"col\":7,\"row\":7},{\"size_x\":6,\"size_y\":3,\"panelIndex\":7,\"type\":\"visualization\",\"id\":\"fixture-table-common-addresses\",\"col\":1,\"row\":10},{\"size_x\":6,\"size_y\":3,\"panelIndex\":8,\"type\":\"visualization\",\"id\":\"fixture-heatmap-hour-of-the-week\",\"col\":7,\"row\":10},{\"size_x\":6,\"size_y\":3,\"panelIndex\":9,\"type\":\"visualization\",\"id\":\"fixture-metric-incident-count\",\"col\":1,\"row\":13},{\"size_x\":6,\"size_y\":3,\"panelIndex\":10,\"type\":\"visualization\",\"id\":\"fixture-pie-incident-types\",\"col\":7,\"row\":13},{\"size_x\":6,\"size_y\":3,\"panelIndex\":11,\"type\":\"visualization\",\"id\":\"fixture-histogram-incidents\",\"col\":1,\"row\":16},{\"size_x\":6,\"size_y\":3,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"fixtures-pie-incidents-by-category\",\"col\":7,\"row\":16},{\"size_x\":6,\"size_y\":3,\"panelIndex\":13,\"type\":\"visualization\",\"id\":\"fixture-tile_map-map\",\"col\":1,\"row\":19},{\"size_x\":6,\"size_y\":3,\"panelIndex\":14,\"type\":\"visualization\",\"id\":\"fixture-pie-response-zones\",\"col\":7,\"row\":19},{\"size_x\":6,\"size_y\":3,\"panelIndex\":15,\"type\":\"visualization\",\"id\":\"fixture-pie-shifts\",\"col\":1,\"row\":22},{\"size_x\":6,\"size_y\":3,\"panelIndex\":16,\"type\":\"visualization\",\"id\":\"fixture-pie-incidents-by-priority\",\"col\":7,\"row\":22}]",
+    "optionsJSON": "{\"darkTheme\":false}",
+    "uiStateJSON": "{\"P-7\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"vis\":{\"defaultColors\":{\"0 - 0.1\":\"rgb(0,104,55)\",\"0.1 - 0.2\":\"rgb(26,151,80)\",\"0.2 - 0.3\":\"rgb(102,189,99)\",\"0.3 - 0.4\":\"rgb(166,217,106)\",\"0.4 - 0.5\":\"rgb(217,239,139)\",\"0.5 - 0.6\":\"rgb(255,255,190)\",\"0.6 - 0.7\":\"rgb(254,224,139)\",\"0.7 - 0.8\":\"rgb(253,174,97)\",\"0.8 - 0.9\":\"rgb(244,109,67)\",\"0.9 - 1\":\"rgb(214,47,39)\"}}},\"P-9\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}}",
+    "version": 1,
+    "timeRestore": false,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+    }
+  }
+}

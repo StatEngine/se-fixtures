@@ -1,5 +1,5 @@
 {
-  "_id": "fixture-incident-count",
+  "_id": "fixture-metric-incident-count",
   "_type": "visualization",
   "_source": {
     "title": "Incident Count",

@@ -1,9 +1,8 @@
 {
-  "name": "@statengine/fixtures",
-  "version": "0.0.1",
-  "description": "Loads fixtures into elastic search.",
+  "name": "@statengine/se-fixtures",
+  "version": "0.0.5",
+  "description": "Loads Kibana fixtures into Elasticsearch.",
   "main": "lib",
-  "private": "true",
   "scripts": {
     "lint": "node_modules/eslint/bin/eslint.js src/** test/**",
     "test": "mocha --require babel-register ./test/*.js",

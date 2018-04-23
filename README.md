@@ -4,14 +4,13 @@
 
 ## Installation
 ```
-npm install
+npm install @statengine/se-fixtures
 ```
 
 ## Overview
 
 Fixture templates are JSONish files, which are modified exports from Kibana.
 
-Template variables are wrapped in ```{{``` and ```}}``` and replaced at seedtime with desired values.
 
 Example template file:
 ```
@@ -48,7 +47,13 @@ const locals = {
     name: 'Richmond Fire and Emergency Services',
     state: 'VA',
     firecares_id: '93345',
+    latitude: 0,
+    longitude: 0,
     timezone: 'US/Eastern',
+    es_indicies: {
+      fire-incident: '',
+      apparatus-fire-incident: ''
+    }
   },
 };
 

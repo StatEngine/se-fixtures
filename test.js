@@ -23,7 +23,7 @@ async.series([
     Fixtures.deleteKibanaIndex({}, locals, done);
   },
   (done) => {
-    Fixtures.createKibanaIndex({}, locals, done);
+    Fixtures.seedKibanaAll({}, locals, done);
   },
 ], (err) => {
   if (err) {

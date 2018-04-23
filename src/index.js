@@ -16,10 +16,7 @@ const loadTemplateType = (index, type, options, locals, cb) => loadTemplates({
 export function createKibanaIndex(options, locals, cb) {
   const index = getIndex(locals.FireDepartment);
   console.info(`Creating Kibana index: ${index}`);
-  createIndex({ index }, (err) => {
-    if (err) return cb(err);
-    return seedKibanaIndex(options, locals, cb);
-  });
+  return createIndex({ index }, cb);
 }
 
 // Deletes a Kibana Index
@@ -51,18 +48,20 @@ export function seedKibanaVisualizations(options, locals, cb) {
 }
 
 // Seeds dashboards in Kibana
-export function seedUserDashboard(options, locals, cb) {
+export function seedKibanaDashboards(options, locals, cb) {
   const index = getIndex(locals.FireDepartment);
   console.info(`Seeding Kibana config: ${index}`);
   return loadTemplateType(index, 'dashboard', options, locals, cb);
 }
 
-// Seeds a Kibana index with configs, index-patterns, visualizations, and dashboards
-export function seedKibanaIndex(options, locals, cb) {
+// Seeds an entire Kibana Index (DELETES existing data!)
+export function seedKibanaAll(options, locals, cb) {
   async.series([
-    done => seedKibanaConfig(options, locals, done),
+    done => deleteKibanaIndex(options, locals, done),
+    done => createKibanaIndex(options, locals, done),
     done => seedKibanaIndexPatterns(options, locals, done),
+    done => seedKibanaConfig(options, locals, done),
     done => seedKibanaVisualizations(options, locals, done),
-    //done => seedUserDashboard(options, locals, done),
+    done => seedKibanaDashboards(options, locals, done),
   ], cb);
 }
