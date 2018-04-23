@@ -43,14 +43,14 @@ export function seedKibanaIndexPatterns(options, locals, cb) {
 // Seeds visualizations in Kibana
 export function seedKibanaVisualizations(options, locals, cb) {
   const index = getIndex(locals.FireDepartment);
-  console.info(`Seeding Kibana config: ${index}`);
+  console.info(`Seeding Kibana visualizations: ${index}`);
   return loadTemplateType(index, 'visualization', options, locals, cb);
 }
 
 // Seeds dashboards in Kibana
 export function seedKibanaDashboards(options, locals, cb) {
   const index = getIndex(locals.FireDepartment);
-  console.info(`Seeding Kibana config: ${index}`);
+  console.info(`Seeding Kibana dashboards: ${index}`);
   return loadTemplateType(index, 'dashboard', options, locals, cb);
 }
 
