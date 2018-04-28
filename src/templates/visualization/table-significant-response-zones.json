@@ -1,0 +1,14 @@
+{
+  "_id": "fixture-table-significant-response-zones",
+  "_type": "visualization",
+  "_source": {
+    "title": "Significant Response Zones",
+    "visState": "{\"title\":\"Significant Response Zones\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"significant_terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"address.response_zone\",\"size\":5}}],\"listeners\":{}}",
+    "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+    "description": "",
+    "version": 1,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"index\":\"{{ FireDepartment.es_indices.fire-incident }}\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+    }
+  }
+}

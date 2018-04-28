@@ -65,4 +65,4 @@ Fixtures.deleteKibanaIndex({}, locals, (err) => {
 
 ## Testing
 
-You can test locally running ```node test```
+You can test locally running ```npm run compile && node test```
