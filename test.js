@@ -6,22 +6,19 @@ const locals = {
   FireDepartment: {
     latitude: 55,
     longitude: -75,
-    fd_id: '76000',
-    name: 'Richmond Fire and Emergency Services',
-    state: 'VA',
-    firecares_id: '93345',
-    timezone: 'US/Eastern',
+    fd_id: '08525',
+    name: 'Montrose Fire Protection District',
+    state: 'CO',
+    firecares_id: '89134',
+    timezone: 'US/Mountain',
     es_indices: {
-      'fire-incident': '93345-va-richmond_fire_and_emergency_services-fire-incident*',
-      'apparatus-fire-incident': '93345-va-richmond_fire_and_emergency_services-apparatus-fire-incident*'
+      'fire-incident': '89131-co-montrose_fire_protection_district-fire-incident*',
+      'apparatus-fire-incident': '89131-co-montrose_fire_protection_district-apparatus-fire-incident*'
     }
   },
 };
 
 async.series([
-  (done) => {
-    Fixtures.deleteKibanaIndex({}, locals, done);
-  },
   (done) => {
     Fixtures.seedKibanaAll({}, locals, done);
   },

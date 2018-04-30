@@ -8,7 +8,7 @@
     "description": "",
     "version": 1,
     "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"index\":\"93345-va-richmond_fire_and_emergency_services-fire-incident*\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      "searchSourceJSON": "{\"index\":\"{{ FireDepartment.es_indices.fire-incident }}\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
     }
   }
 }
