@@ -20,7 +20,7 @@ const locals = {
 
 async.series([
   (done) => {
-    Fixtures.seedKibanaAll({}, locals, done);
+    Fixtures.seedIndexTemplates({}, locals, done);
   },
 ], (err) => {
   if (err) {

@@ -1,6 +1,8 @@
 import * as async from 'async';
 
-import { createIndex, deleteIndex } from './lib/elasticsearch';
+import { templates } from '@statengine/schemas';
+
+import { createIndex, deleteIndex, putIndexTemplate } from './lib/elasticsearch';
 import { loadTemplates } from './lib/load-templates';
 
 const getIndex = fd => `.kibana_${fd.firecares_id}`;
@@ -64,4 +66,15 @@ export function seedKibanaAll(options, locals, cb) {
     done => seedKibanaVisualizations(options, locals, done),
     done => seedKibanaDashboards(options, locals, done),
   ], cb);
+}
+
+export function seedIndexTemplates(options, locals, cb) {
+  async.eachOf(templates, (template, name, done) => putIndexTemplate({
+    name,
+    order: template.order,
+    template: template.template,
+    body: {
+      mappings: template.mappings,
+    },
+  }, done), cb);
 }

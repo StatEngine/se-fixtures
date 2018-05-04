@@ -22,3 +22,8 @@ export function updateDoc(params, cb) {
   const client = connection.getClient();
   client.update(params, cb);
 }
+
+export function putIndexTemplate(params, cb) {
+  const client = connection.getClient();
+  client.indices.putTemplate(params, cb);
+}
