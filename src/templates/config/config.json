@@ -6,6 +6,7 @@
     "dateFormat:tz": "{{ FireDepartment.timezone }}",
     "timelion:es.timefield": "description.event_opened",
     "state:storeInSessionStorage": true,
-    "defaultIndex": "{{ FireDepartment.es_indices.fire-incident }}"
+    "defaultIndex": "{{ FireDepartment.es_indices.fire-incident }}",
+    "format:number:defaultPattern": "0,0.[0]"
   }
 }
