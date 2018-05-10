@@ -13,7 +13,7 @@ Fixture templates are JSONish files, which are modified exports from Kibana.
 
 
 Example template file:
-```
+```JSON
 {
   "_type": "config",
   "_id": "5.5.3-SNAPSHOT",
@@ -36,7 +36,7 @@ At seed time, ```dateFormat:tz``` field will be substituted with the value defin
 
 ## Library Usage
 
-```
+```JavaScript
 const Fixtures = require('./lib');
 
 const locals = {
