@@ -1,6 +1,6 @@
 {
   "name": "@statengine/se-fixtures",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Loads Kibana fixtures into Elasticsearch.",
   "main": "lib",
   "scripts": {
