@@ -3,7 +3,7 @@
   "_type": "visualization",
   "_source": {
     "title": "24 Hour Moving Average Response Times",
-    "visState": "{\"title\":\"24 Hour Moving Average Response Times\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index={{ FireDepartment.es_indices.fire-incident }}, metric=avg:description.extended_data.response_duration).movingaverage(24).color(darkgreen).label(\\\"24 hour moving average\\\"), .es(index={{ FireDepartment.es_indices.fire-incident }}, metric=avg:description.extended_data.response_duration).points(fill=5).color(lightgreen).label(\\\"Average response time\\\")\",\"interval\":\"auto\"},\"aggs\":[],\"listeners\":{}}",
+    "visState": "{\"title\":\"24 Hour Moving Average Response Times\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index={{ FireDepartment.es_indices.fire-incident }}, metric=avg:durations.response.seconds).movingaverage(24).color(darkgreen).label(\\\"24 hour moving average\\\"), .es(index={{ FireDepartment.es_indices.fire-incident }}, metric=avg:durations.response.seconds).points(fill=5).color(lightgreen).label(\\\"Average response time\\\")\",\"interval\":\"auto\"},\"aggs\":[],\"listeners\":{}}",
     "uiStateJSON": "{}",
     "description": "",
     "version": 1,
