@@ -1,0 +1,14 @@
+{
+    "_id": "organizational",
+    "_type": "visualization",
+    "_source": {
+      "title": "Organizational",
+      "visState": "{\"title\":\"Organizational\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Organizational\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },

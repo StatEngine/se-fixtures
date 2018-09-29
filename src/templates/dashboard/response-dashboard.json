@@ -1,0 +1,17 @@
+{
+    "_id": "response-dashboard",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Response Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":7,\"id\":\"response-map\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"responses\",\"panelIndex\":2,\"row\":1,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"5536c500-551f-11e8-9a7d-0ba5008a4082\",\"panelIndex\":3,\"row\":14,\"size_x\":6,\"size_y\":7,\"type\":\"visualization\"},{\"col\":7,\"id\":\"ef0d3480-551e-11e8-9a7d-0ba5008a4082\",\"panelIndex\":4,\"row\":14,\"size_x\":6,\"size_y\":7,\"type\":\"visualization\"},{\"col\":1,\"id\":\"77a57420-bdf1-11e8-86d3-6359defb92d1\",\"panelIndex\":5,\"row\":8,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"9aebc1f0-bdf1-11e8-86d3-6359defb92d1\",\"panelIndex\":6,\"row\":11,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"ce414670-bbb1-11e8-92a3-13d922a106f2\",\"panelIndex\":7,\"row\":6,\"size_x\":12,\"size_y\":2,\"type\":\"visualization\"},{\"size_x\":6,\"size_y\":3,\"panelIndex\":8,\"type\":\"visualization\",\"id\":\"2eb0e3c0-bdf2-11e8-86d3-6359defb92d1\",\"col\":7,\"row\":8}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"mapCenter\":[37.53396023598336,-77.42803573608398]},\"P-2\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"meta\":{\"index\":\"{{ FireDepartment.es_indices.apparatus-fire-incident }}\",\"type\":\"phrases\",\"key\":\"description.suppressed\",\"value\":\"false\",\"params\":[\"false\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"description.suppressed\":\"false\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"globalState\"}},{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
