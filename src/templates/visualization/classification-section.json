@@ -1,9 +1,9 @@
 {
-    "_id": "organizational",
+    "_id": "classification-section",
     "_type": "visualization",
     "_source": {
-      "title": "Organizational",
-      "visState": "{\"title\":\"Organizational\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Organizational\"},\"aggs\":[],\"listeners\":{}}",
+      "title": "Classification",
+      "visState": "{\"title\":\"Classification\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Classification\"},\"aggs\":[],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,
@@ -11,4 +11,4 @@
         "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
       }
     }
-  },
+  }

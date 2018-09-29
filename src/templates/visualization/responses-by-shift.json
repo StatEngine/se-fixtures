@@ -11,4 +11,4 @@
        "searchSourceJSON": "{\"index\":\"{{ FireDepartment.es_indices.apparatus-fire-incident }}\",\"query\":{\"match_all\":{}},\"filter\":[]}"
      }
    }
- },
+ }

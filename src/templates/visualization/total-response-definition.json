@@ -1,0 +1,14 @@
+{
+    "_id": "total-response-definition",
+    "_type": "visualization",
+    "_source": {
+      "title": "Total Response Definition",
+      "visState": "{\"title\":\"Total Response Definition\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Total Response\\n\\nThe time duration between when the call is answered and the first unit arrives on scene.\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }

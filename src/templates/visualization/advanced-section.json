@@ -1,0 +1,14 @@
+{
+    "_id": "advanced-section",
+    "_type": "visualization",
+    "_source": {
+      "title": "Advanced",
+      "visState": "{\"title\":\"Advanced\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Advanced\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }

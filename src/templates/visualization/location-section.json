@@ -1,0 +1,14 @@
+{
+  "_id": "location-section",
+  "_type": "visualization",
+  "_source": {
+    "title": "Location",
+    "visState": "{\"title\":\"Location\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Location\"},\"aggs\":[],\"listeners\":{}}",
+    "uiStateJSON": "{}",
+    "description": "",
+    "version": 1,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+    }
+  }
+}

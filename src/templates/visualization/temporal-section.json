@@ -1,0 +1,14 @@
+{
+    "_id": "temporal-section",
+    "_type": "visualization",
+    "_source": {
+      "title": "Temporal",
+      "visState": "{\"title\":\"Temporal\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Temporal\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }
