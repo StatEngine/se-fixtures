@@ -1,7 +1,10 @@
 {
-    "_id": "temporal-section",
-    "_type": "visualization",
-    "_source": {
+  "_index": ".kibana_{{ FireDepartment.firecares_id }}",
+  "_id": "visualization:temporal-section",
+  "_type": "doc",
+  "_source": {
+    "type": "visualization",
+    "visualization": {
       "title": "Temporal",
       "visState": "{\"title\":\"Temporal\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Temporal\"},\"aggs\":[],\"listeners\":{}}",
       "uiStateJSON": "{}",
@@ -12,3 +15,4 @@
       }
     }
   }
+}

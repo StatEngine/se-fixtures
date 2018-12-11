@@ -1,7 +1,10 @@
 {
-    "_id": "first-turnout-defintion",
-    "_type": "visualization",
-    "_source": {
+  "_index": ".kibana_{{ FireDepartment.firecares_id }}",
+  "_id": "visualization:first-turnout-defintion",
+  "_type": "doc",
+  "_source": {
+    "type": "visualization",
+    "visualization": {
       "title": "First Turnout Definition",
       "visState": "{\"title\":\"First Turnout Definition\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# First Turnout\\n\\nThe time duration between when the first unit is dispatched and the first unit is enroute.\\n\\nThis calculation does not imply the first unit dispatched was also the first unit enroute.\"},\"aggs\":[],\"listeners\":{}}",
       "uiStateJSON": "{}",
@@ -12,3 +15,4 @@
       }
     }
   }
+}

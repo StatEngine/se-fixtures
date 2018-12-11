@@ -1,14 +1,18 @@
 {
-   "_id": "responses-by-shift",
-   "_type": "visualization",
-   "_source": {
-     "title": "Responses By Shift",
-     "visState": "{\"title\":\"Responses By Shift\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"description.shift.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
-     "uiStateJSON": "{}",
-     "description": "",
-     "version": 1,
-     "kibanaSavedObjectMeta": {
-       "searchSourceJSON": "{\"index\":\"{{ FireDepartment.es_indices.apparatus-fire-incident }}\",\"query\":{\"match_all\":{}},\"filter\":[]}"
-     }
-   }
- }
+  "_index": ".kibana_{{ FireDepartment.firecares_id }}",
+  "_id": "visualization:responses-by-shift",
+  "_type": "doc",
+  "_source": {
+    "type": "visualization",
+    "visualization": {
+      "title": "Responses By Shift",
+      "visState": "{\"title\":\"Responses By Shift\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"description.shift.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"{{ FireDepartment.es_indices.apparatus-fire-incident }}\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }
+}

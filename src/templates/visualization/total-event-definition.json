@@ -1,7 +1,10 @@
 {
-    "_id": "total-event-definition",
-    "_type": "visualization",
-    "_source": {
+  "_index": ".kibana_{{ FireDepartment.firecares_id }}",
+  "_id": "visualization:total-event-definition",
+  "_type": "doc",
+  "_source": {
+    "type": "visualization",
+    "visualization": {
       "title": "Total Event Definition",
       "visState": "{\"title\":\"Total Event Definition\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Total Event\\n\\nThe time duration between when the call is opened in CAD and the call is closed in CAD\"},\"aggs\":[],\"listeners\":{}}",
       "uiStateJSON": "{}",
@@ -12,3 +15,4 @@
       }
     }
   }
+}

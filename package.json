@@ -1,12 +1,12 @@
 {
   "name": "@statengine/se-fixtures",
-  "version": "0.0.20",
+  "version": "1.0.0",
   "description": "Loads Kibana fixtures into Elasticsearch.",
   "main": "lib",
   "scripts": {
     "lint": "node_modules/eslint/bin/eslint.js src/** test/**",
     "test": "mocha --require babel-register ./test/*.js",
-    "compile": "babel --presets env -d lib/ src/ --copy-files",
+    "compile": "rm -rf ./lib && babel --presets env -d lib/ src/ --copy-files",
     "prepare": "npm run compile"
   },
   "author": "Prominent Edge",

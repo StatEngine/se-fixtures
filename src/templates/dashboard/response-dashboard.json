@@ -1,7 +1,11 @@
 {
-    "_id": "response-dashboard",
-    "_type": "dashboard",
-    "_source": {
+  "_index": ".kibana_{{ FireDepartment.firecares_id }}",
+  "_id": "dashboard:response-dashboard",
+  "_type": "doc",
+  "_source": {
+    "type": "dashboard",
+    "updated_at": "2018-12-11T20:56:17.913Z",
+    "dashboard": {
       "title": "Response Dashboard",
       "hits": 0,
       "description": "",
@@ -15,3 +19,4 @@
       }
     }
   }
+}

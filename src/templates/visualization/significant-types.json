@@ -1,7 +1,10 @@
 {
-    "_id": "significant-types",
-    "_type": "visualization",
-    "_source": {
+  "_index": ".kibana_{{ FireDepartment.firecares_id }}",
+  "_id": "visualization:significant-types",
+  "_type": "doc",
+  "_source": {
+    "type": "visualization",
+    "visualization": {
       "title": "Significant Types",
       "visState": "{\"title\":\"Significant Types\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"significant_terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"description.type\",\"size\":5,\"customLabel\":\"Unusual Types\"}}],\"listeners\":{}}",
       "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
@@ -12,3 +15,4 @@
       }
     }
   }
+}

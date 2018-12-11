@@ -1,7 +1,10 @@
 {
-    "_id": "weather-section",
-    "_type": "visualization",
-    "_source": {
+  "_index": ".kibana_{{ FireDepartment.firecares_id }}",
+  "_id": "visualization:weather-section",
+  "_type": "doc",
+  "_source": {
+    "type": "visualization",
+    "visualization": {
       "title": "Weather",
       "visState": "{\"title\":\"Weather\",\"type\":\"markdown\",\"params\":{\"markdown\":\"# Weather\"},\"aggs\":[],\"listeners\":{}}",
       "uiStateJSON": "{}",
@@ -12,3 +15,4 @@
       }
     }
   }
+}

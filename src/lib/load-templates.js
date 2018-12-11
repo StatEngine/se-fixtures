@@ -43,15 +43,18 @@ export function loadTemplates(params, cb) {
     },
     // Update docs into ES
     (docs, done) => {
-      async.each(docs, (doc, callback) => updateDoc({
-        index: params.index,
-        type: doc._type,
-        id: doc._id,
-        body: {
-          doc: doc._source,
-          doc_as_upsert: true,
-        },
-      }, callback), (err) => {
+      async.each(docs, (doc, callback) => {
+        console.info(`Loading: ${doc._id}`);
+        updateDoc({
+          index: params.index,
+          type: doc._type,
+          id: doc._id,
+          body: {
+            doc: doc._source,
+            doc_as_upsert: true,
+          },
+        }, callback);
+      }, (err) => {
         done(err);
       });
     }], (err) => {

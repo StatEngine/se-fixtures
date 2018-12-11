@@ -1,9 +1,12 @@
 {
-  "_id": "{{ FireDepartment.es_indices.apparatus-fire-incident }}",
-  "_type": "index-pattern",
+  "_index": ".kibana_{{ FireDepartment.firecares_id }}",
+  "_id": "index-pattern:{{ FireDepartment.es_indices.apparatus-fire-incident }}",
+  "_type": "doc",
   "_source": {
-    "title": "{{ FireDepartment.es_indices.apparatus-fire-incident }}",
-    "timeFieldName": "description.event_opened",
-    "notExpandable": true
+    "type": "index-pattern",
+    "index-pattern": {
+      "title": "{{ FireDepartment.es_indices.apparatus-fire-incident }}",
+      "timeFieldName": "description.event_opened"
+    }
   }
 }
