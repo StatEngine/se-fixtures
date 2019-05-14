@@ -1,7 +1,7 @@
 {
   "_type": "doc",
   "_id": "config:6.4.1",
-  "_index": ".kibana_{{ FireDepartment.firecares_id }}",
+  "_index": "{{ kibana.tenancy }}",
   "_source": {
     "type": "config",
     "config": {

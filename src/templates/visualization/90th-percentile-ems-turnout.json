@@ -1,5 +1,5 @@
 {
-  "_index": ".kibana_{{ FireDepartment.firecares_id }}",
+  "_index": "{{ kibana.tenancy }}",
   "_id": "visualization:90th-percentile-ems-turnout",
   "_type": "doc",
   "_source": {

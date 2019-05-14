@@ -3,6 +3,9 @@ const async = require('async');
 const Fixtures = require('./lib');
 
 const locals = {
+  kibana: {
+    tenancy: '.kibana_123',
+  },
   FireDepartment: {
     latitude: 55,
     longitude: -75,
