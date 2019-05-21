@@ -4,8 +4,8 @@ const Fixtures = require('./lib');
 
 const locals = {
   FireDepartment: {
-    latitude: 55,
-    longitude: -75,
+    latitude: 37.5407,
+    longitude: -77.4360,
     fd_id: '76000',
     name: 'Richmond Fire and Emergency Services',
     state: 'VA',
