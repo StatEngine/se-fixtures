@@ -28,7 +28,7 @@ Example template file:
 
 At seed time, ```dateFormat:tz``` field will be substituted with the value defined in  ```FireDepartment.timezone```.
 
-## Adding a new visulaization
+## Adding a new visualization
 
 1. To add a new visualization, export the JSON from Kibana via the ```Management->Saved Objects``` menu
 2. Copy the exported JSON to the templates folder.
