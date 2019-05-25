@@ -11,7 +11,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"{{ FireDepartment.es_indices.apparatus-fire-incident }}\",\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"{{ FireDepartment.es_indices.apparatus-fire-incident }}\",\"type\":\"phrases\",\"key\":\"description.suppressed\",\"value\":\"false\",\"params\":[\"false\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"description.suppressed\":\"false\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"globalState\"}}]}"
+        "searchSourceJSON": "{\"index\":\"{{ fire_department.es_indices.apparatus-fire-incident }}\",\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"{{ fire_department.es_indices.apparatus-fire-incident }}\",\"type\":\"phrases\",\"key\":\"description.suppressed\",\"value\":\"false\",\"params\":[\"false\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"description.suppressed\":\"false\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"globalState\"}}]}"
       }
     }
   }

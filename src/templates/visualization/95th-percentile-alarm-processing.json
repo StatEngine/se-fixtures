@@ -11,7 +11,7 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"{{ FireDepartment.es_indices.fire-incident }}\",\"query\":{\"match_all\":{}},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Suppressed Incidents Hidden\",\"disabled\":false,\"index\":\"{{ FireDepartment.es_indices.fire-incident }}\",\"key\":\"description.suppressed\",\"negate\":true,\"params\":[\"TRUE\"],\"type\":\"phrases\",\"value\":\"true\"},\"query\":{\"bool\":{\"minimum_should_match\":1,\"should\":[{\"match_phrase\":{\"description.suppressed\":\"true\"}}]}}}]}"
+        "searchSourceJSON": "{\"index\":\"{{ fire_department.es_indices.fire-incident }}\",\"query\":{\"match_all\":{}},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Suppressed Incidents Hidden\",\"disabled\":false,\"index\":\"{{ fire_department.es_indices.fire-incident }}\",\"key\":\"description.suppressed\",\"negate\":true,\"params\":[\"TRUE\"],\"type\":\"phrases\",\"value\":\"true\"},\"query\":{\"bool\":{\"minimum_should_match\":1,\"should\":[{\"match_phrase\":{\"description.suppressed\":\"true\"}}]}}}]}"
       }
     }
   }
