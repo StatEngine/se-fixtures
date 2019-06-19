@@ -3,7 +3,10 @@ const async = require('async');
 const Fixtures = require('./lib');
 
 const locals = {
-  FireDepartment: {
+  kibana: {
+    tenancy: '.kibana_93345_123',
+  },
+  fire_department: {
     latitude: 37.5407,
     longitude: -77.4360,
     fd_id: '76000',
@@ -13,7 +16,7 @@ const locals = {
     timezone: 'US/Eastern',
     es_indices: {
       'fire-incident': '93345-va-richmond_fire_and_emergency_services-fire-incident*',
-      'apparatus-fire-incident': '93345-va-richmond_fire_and_emergency_services-apparatus-fire-incident*'
+      'apparatus-fire-incident': '93345-va-richmond_fire_and_emergency_services-apparatus-fire-incident*',
     }
   },
 };

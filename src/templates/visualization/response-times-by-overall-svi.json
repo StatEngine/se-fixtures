@@ -10,9 +10,9 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"{{ FireDepartment.es_indices.fire-incident }}\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        "searchSourceJSON": "{\"index\":\"{{ fire_department.es_indices.fire-incident }}\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
       }
     }
   },
-  "_index": ".kibana_{{ FireDepartment.firecares_id }}"
+  "_index": "{{ kibana.tenancy }}"
 }

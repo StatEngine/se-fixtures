@@ -1,5 +1,5 @@
 {
-  "_index": ".kibana_{{ FireDepartment.firecares_id }}",
+  "_index": "{{ kibana.tenancy }}",
   "_id": "dashboard:incident-dashboard",
   "_type": "doc",
   "_source": {
@@ -22,7 +22,7 @@
         "value": 0
       },
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Suppressed Incidents Hidden\",\"disabled\":false,\"index\":\"{{ FireDepartment.es_indices.fire-incident }}\",\"key\":\"description.suppressed\",\"negate\":true,\"params\":[\"true\"],\"type\":\"phrases\",\"value\":\"true\"},\"query\":{\"bool\":{\"minimum_should_match\":1,\"should\":[{\"match_phrase\":{\"description.suppressed\":\"true\"}}]}}},{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+        "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Suppressed Incidents Hidden\",\"disabled\":false,\"index\":\"{{ fire_department.es_indices.fire-incident }}\",\"key\":\"description.suppressed\",\"negate\":true,\"params\":[\"true\"],\"type\":\"phrases\",\"value\":\"true\"},\"query\":{\"bool\":{\"minimum_should_match\":1,\"should\":[{\"match_phrase\":{\"description.suppressed\":\"true\"}}]}}},{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
       }
     }
   }

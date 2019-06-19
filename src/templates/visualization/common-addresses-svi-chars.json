@@ -10,9 +10,9 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"{{ FireDepartment.es_indices.fire-incident }}\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"{{ FireDepartment.es_indices.fire-incident }}\",\"negate\":true,\"type\":\"phrase\",\"key\":\"address.address_line1\",\"value\":\"\",\"params\":{\"query\":\"\",\"type\":\"phrase\"},\"disabled\":false,\"alias\":null},\"query\":{\"match\":{\"address.address_line1\":{\"query\":\"\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+        "searchSourceJSON": "{\"index\":\"{{ fire_department.es_indices.fire-incident }}\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[{\"meta\":{\"index\":\"{{ fire_department.es_indices.fire-incident }}\",\"negate\":true,\"type\":\"phrase\",\"key\":\"address.address_line1\",\"value\":\"\",\"params\":{\"query\":\"\",\"type\":\"phrase\"},\"disabled\":false,\"alias\":null},\"query\":{\"match\":{\"address.address_line1\":{\"query\":\"\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
       }
     }
   },
-  "_index": ".kibana_{{ FireDepartment.firecares_id }}"
+  "_index": "{{ kibana.tenancy }}"
 }

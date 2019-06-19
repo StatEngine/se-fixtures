@@ -14,5 +14,5 @@
       }
     }
   },
-  "_index": ".kibana_{{ FireDepartment.firecares_id }}"
+  "_index": "{{ kibana.tenancy }}"
 }
